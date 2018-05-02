@@ -71,7 +71,7 @@ if ( 'modern' === Avada()->settings->get( 'mobile_menu_design' ) ) {
 		<?php if ( 'Left' === Avada()->settings->get( 'header_position' ) || 'Right' === Avada()->settings->get( 'header_position' ) ) : ?>
 			<?php avada_side_header(); ?>
 		<?php endif; ?>
-		<div class="header-bottom"></div>
+	<!-- 	<div class="header-bottom"></div> -->
 		<div id="sliders-container">
 			<?php
 			$slider_page_id = '';

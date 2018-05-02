@@ -387,36 +387,39 @@ div#purchase {
 }
 #Step-one h3 {
     color: #fff !important;
-    font-size: 36px !important;
+    font-size: 35px !important;
     padding-top: 25px;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
     margin-top: 24px;
+    font-family: "PT Sans";
 
 }
 #Step-one p.step-one {
     color: #ffffff;
-    font-size: 26px;
+    font-size: 23px;
     width: 77%;
     margin: auto;
     padding-bottom: 32px !important;
-   word-spacing: 1px;
+    line-height: 27px;
 }
 
 p.limited {
     color: #fff;
     font-size: 26px;
     padding-top: 15px;
+    padding-bottom: 20px;
     width: 80%;
     margin: 0 auto;
+    line-height: 30px;
 }
 p.why-abs {
-    width: 57%;
+   width: 44%;
     margin: auto;
     background-color: #80000F;
     color: #fff;
     padding-bottom: 8px;
     padding-top: 8px;
-    font-size: 17px;
+    font-size: 17.5px;
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -436,13 +439,14 @@ p.answers-list {
 #step-two h3 {
     color: #003655;
     font-size: 36px !important;
-    font-weight: 500;
-    margin-bottom: 4px; 
+    /*font-weight: 500;
+    margin-bottom: 4px;*/ 
 }
 p.step-two {
     color: #000;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 26px;
+    line-height: 27px;
+    /*font-weight: 600;*/
 }
 div#step-two {
     margin-bottom: 10px !important;
@@ -462,12 +466,13 @@ p.step-two-img {
     margin-bottom: -11%;
 }
 h3.step-three {
-        color: #ffffff !important;
+    color: #ffffff !important;
     font-size: 33px !important;
     width: 34%;
     margin: auto;
     padding-top: 30px;
     line-height: 35px !important;
+    font-family: "PT Sans" !important;
 }
 p.step-three-all {
        width: 70%;
@@ -527,7 +532,8 @@ p.step-four-made {
   font-size: 30px;
  }
  p.step-four-made strong {
-  color: #003655; 
+  color: #003655;
+  font-size: 30px; 
  }
  div#Step-four {
     padding-top: 18px;
@@ -612,7 +618,9 @@ div#img-one {
     letter-spacing: 1px;
 }
 div#three-col { margin-bottom: -3%; }
-#Step-one span.fusion-imageframe img { width: 520px !important; }
+#Step-one span.fusion-imageframe img { 
+    width: 450px !important; 
+}
 div#step-imjh {
     margin-right: 2% !important;
 }
@@ -1324,7 +1332,7 @@ body.single-product section#content{
   }
 /* add back ground image in header */
 /* 30-04-2018 */
-header.fusion-header-wrapper {
+/*header.fusion-header-wrapper {
    background-image: url(img/header.png);
    background-repeat: no-repeat;
    background-position: calc(100% - 107px) calc(100% - -53px);
@@ -1332,7 +1340,7 @@ header.fusion-header-wrapper {
  .fusion-header-v2 .fusion-secondary-header {
    border-top-color: #003655;
    opacity: .8;
-}
+}*/
 li.custom-hover:hover { 
 	background-color: #dee0e2;
  }
@@ -1347,12 +1355,51 @@ li.custom-hover:hover {
 .ubermenu-current_page_item.ubermenu-current-menu-item {
 	border-bottom: 3px solid #333333 !important;
 }
-.fusion-header-v2 .fusion-header {
-    border-bottom: 5px solid #80000F !important;
+ #step-two h3 strong, .step-three strong {
+    font-size: 30px;
+    font-family: "PT Sans" !important;
 }
-.header-bottom {
-    width: 100%;
-    height: 27px;
-    background-color: #003655;
-    padding-bottom: 0px;
+#Step-one h3 strong{
+    font-size: 35px;
+}
+.catalog-ordering {
+    margin-top: 32px;
+}
+.answers, .answers-list{
+    display: none;
+}
+
+/*  custom category design */
+
+.custom-view {
+    width: 100% !important;
+    max-width: 81% !important;
+}
+.custom-view:before {
+    content: '\f002' !important;
+    font-size: 25px;
+    margin-top: -7px !important;
+    /* margin-right: 20px !important; */
+}
+body.term-stained-cabinets nav.woocommerce-pagination,
+body.term-white-cabinets nav.woocommerce-pagination  {
+    display: none;
+}
+h3.product-title-custom a {
+    font-size: 23px;
+    color: #003655 !important;
+   }
+h3.product-title-custom {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+p.cat_description {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #333333;
+    font-size: 15px;
+}
+.custom-view span {
+    padding-left: 20px;
+    font-size: 16px;
 }

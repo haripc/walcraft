@@ -1,0 +1,40 @@
+2018-05-02T10:13:45+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/themes/Avada-Child-Theme/archive-product.php:76
+Stack trace:
+#0 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-includes/template-loader.php(74): include('/media/linux/ba...')
+#3 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-blog-header.php(19): require_once('/media/linux/ba...')
+#4 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/index.php(17): require('/media/linux/ba...')
+#5 {main}
+  thrown
+
+2018-05-02T10:13:55+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/themes/Avada-Child-Theme/archive-product.php:76
+Stack trace:
+#0 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-includes/template-loader.php(74): include('/media/linux/ba...')
+#3 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-blog-header.php(19): require_once('/media/linux/ba...')
+#4 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/index.php(17): require('/media/linux/ba...')
+#5 {main}
+  thrown
+
+2018-05-02T10:20:56+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/themes/Avada-Child-Theme/archive-product.php:77
+Stack trace:
+#0 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-includes/template-loader.php(74): include('/media/linux/ba...')
+#3 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-blog-header.php(19): require_once('/media/linux/ba...')
+#4 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/index.php(17): require('/media/linux/ba...')
+#5 {main}
+  thrown
+
+2018-05-02T10:29:18+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/themes/Avada-Child-Theme/archive-product.php:77
+Stack trace:
+#0 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include()
+#1 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-includes/template-loader.php(74): include('/media/linux/ba...')
+#3 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/wp-blog-header.php(19): require_once('/media/linux/ba...')
+#4 /media/linux/baljit/techno/xampp/htdocs/walcraftlive/index.php(17): require('/media/linux/ba...')
+#5 {main}
+  thrown
+

@@ -62,20 +62,79 @@ if ( have_posts() ) {
 
 	woocommerce_product_loop_start();
 
-	if ( wc_get_loop_prop( 'total' ) ) {
+		$cate = get_queried_object();
+		$cateID = $cate->term_id;
+		//echo $cateID;
+
+		$args = array(
+		   'hierarchical' => 1,
+		   'show_option_none' => '',
+		   'hide_empty' => 0,
+		   'parent' => $cateID,
+		   'taxonomy' => 'product_cat'
+		);
+		$subcats = get_categories($args);
+
+		$resultSubCat=count($subcats);
+
+		if($cateID==18 || $cateID==17){ ?>
+		<ul class="products clearfix products-2">
+		   	<?php foreach($subcats as $cat_id  ) {
+					//print_r($cat_id);
+		   		 	$thumbnail_id = get_woocommerce_term_meta( $cat_id->term_id, 'thumbnail_id', true ); 
+					$image = wp_get_attachment_url( $thumbnail_id );
+		   		?>
+		   	<li class="post-1463 product type-product status-publish has-post-thumbnail product_cat-essex product_cat-two-door-wall-cabinets-essex product_cat-wall-cabinets-essex product-grid-view first instock sale taxable shipping-taxable purchasable product-type-simple">
+						<div class="featured-image">
+							<img width="300" height="300" src="<?php echo $image; ?>" class="attachment-shop_catalog size-shop_catalog wp-post-image">
+							<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
+						</div>
+
+				<div class="product-details">
+					<div class="product-details-container">
+						<h3 class="product-title-custom">
+						<a href="<?php echo get_category_link($cat_id->term_id); ?>">
+							<?php echo $cat_id->name; ?></a>
+						</h3>
+						<div class="fusion-price-rating">
+							<p class="cat_description"> <?php echo $cat_id->category_description; ?> </p>
+						</div>
+					</div>
+				</div>
+
+			<div class="product-buttons">
+				<div class="fusion-content-sep sep-double sep-solid"></div>
+				<div class="product-buttons-container clearfix">
+				<a href="<?php echo get_category_link($cat_id->term_id); ?>" class="button add_to_cart_button custom-view" rel="nofollow"><span>View Cabinet Selection and Pricing </span> </a>
+				<a href="#" class="show_details_button">Details </a>
+				</div>
+			</div>
+		</li>
+           		
+          <?php 	} ?>
+
+           </ul>
+
+           	
+       <?php    }
+           else {
+			 if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
 
-			/**
+			/*
 			 * Hook: woocommerce_shop_loop.
 			 *
 			 * @hooked WC_Structured_Data::generate_product_data() - 10
 			 */
+			 
 			do_action( 'woocommerce_shop_loop' );
-
+			
 			wc_get_template_part( 'content', 'product' );
+			
 		}
 	}
+}
 
 	woocommerce_product_loop_end();
 
